@@ -75,9 +75,25 @@ This project demonstrates how **GoPhish** (a phishing framework) and **Mailtrap*
 ![image](https://github.com/user-attachments/assets/f69a57fb-322f-4574-b20a-3b2cbfa83ee6) *Figure 9: Mailtrap email preview with headers and content*
 
 ### **3.3 Results**  
-- **Emails Sent**: 1 (via Mailtrap).  
-- **Landing Page**: Displayed correctly when accessed.  
-- **Data Captured**: Credentials submitted to GoPhish (if tested outside Mailtrap).  
+- **Emails Sent**: 1 (via Mailtrap).
+
+![image](https://github.com/user-attachments/assets/2e498e80-a393-4799-b296-b118e39c248d) *Figure 10: Confirms email was sent*
+
+- **Landing Page**: Displayed correctly when accessed.
+
+![image](https://github.com/user-attachments/assets/b3a58690-6fed-460b-ae55-6366699b0005) *Figure 11: The actual email sent and it worked*
+
+| Metric | Timestamp | Technical Data |
+|--------|-----------|----------------|
+| **Email Sent** | Apr 9 11:59:07 | SMTP successful delivery |
+| **Email Opened** | Apr 9 11:59:13 | Tracking pixel triggered |
+| **Link Clicked** | Apr 9 11:59:21 | {{.URL}} accessed |
+| **Data Submitted** | Apr 9 11:59:25 | Credentials captured |
+
+![image](https://github.com/user-attachments/assets/75b9c256-a2fc-4f40-bda7-02e9d3357a3f) *Figure 12: Gophish admin dashboard showing campaign management*
+
+![image](https://github.com/user-attachments/assets/1ddaff85-0f1a-4d07-aa7c-9f1d9ce91ee9)
+
 
 ---
 
