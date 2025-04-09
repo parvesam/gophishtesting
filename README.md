@@ -122,7 +122,6 @@ This project demonstrates how **GoPhish** (a phishing framework) and **Mailtrap*
 |-------|----------|
 | No opens recorded in Mailtrap | Mailtrap blocks tracking - use real SMTP for production tests |
 | Form submissions not logged | Ensure form uses `action="{{.URL}}"` |
-| Emails flagged as spam | Add SPF/DKIM records to domain |
 | Broken CSS in emails | Use inline styles in HTML templates |
 
 ---
