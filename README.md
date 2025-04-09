@@ -94,6 +94,11 @@ This project demonstrates how **GoPhish** (a phishing framework) and **Mailtrap*
 
 ![image](https://github.com/user-attachments/assets/1ddaff85-0f1a-4d07-aa7c-9f1d9ce91ee9)
 
+## ✅ Confirmed Results
+- **Email successfully sent** from `parveemirah@gmail.com`  
+- **Delivered** to target mailbox  
+- **Tracking worked**: Opens/clicks recorded  
+- **Credentials captured** via fake login page  
 
 ---
 
@@ -112,10 +117,19 @@ This project demonstrates how **GoPhish** (a phishing framework) and **Mailtrap*
 
 ---
 
+## ⚠️ Errors Encountered
+| Issue | Solution |
+|-------|----------|
+| No opens recorded in Mailtrap | Mailtrap blocks tracking - use real SMTP for production tests |
+| Form submissions not logged | Ensure form uses `action="{{.URL}}"` |
+| Emails flagged as spam | Add SPF/DKIM records to domain |
+| Broken CSS in emails | Use inline styles in HTML templates |
+
+---
+
 ## **5. Repository Files**  
 - `/templates/bank_login.html`: Fake bank landing page.  
 - `/templates/phishing_email.html`: Cloned bank email.  
-- `/media/`: Screenshots of setup/results.  
 
 ---
 
