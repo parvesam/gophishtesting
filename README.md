@@ -24,8 +24,12 @@ This project demonstrates how **GoPhish** (a phishing framework) and **Mailtrap*
 - Designs phishing campaigns (emails + landing pages).  
 - Tracks user interactions (email opens, link clicks, form submissions).  
 - Generates reports on campaign success rates.
-![image](https://github.com/user-attachments/assets/16dd435c-063b-4807-9299-6614b660cbfa)
-![image](https://github.com/user-attachments/assets/48c99824-46c5-42f3-bff2-e817aed5dcb7)
+  
+![image](https://github.com/user-attachments/assets/16dd435c-063b-4807-9299-6614b660cbfa) *Figure 1: GoPhish admin login interface - First access point for campaign setup*
+
+![image](https://github.com/user-attachments/assets/48c99824-46c5-42f3-bff2-e817aed5dcb7) *Figure 2: Mandatory password reset after initial admin login*
+
+![image](https://github.com/user-attachments/assets/9fd59266-d78e-4f46-99c2-670c7b019fd5) *Figure 3: GoPhish admin dashboard - Central control panel for campaigns*
 
 **Key Features Used**:  
 - **Sending Profiles**: Configured Mailtrap as the SMTP relay.  
@@ -36,7 +40,12 @@ This project demonstrates how **GoPhish** (a phishing framework) and **Mailtrap*
 **What It Does**:  
 - Acts as a fake SMTP server to "catch" test emails.  
 - Prevents accidental spam to real users during development.
-![image](https://github.com/user-attachments/assets/cb0864d4-0e70-4ff0-b4cb-a3715e8fdec7)
+
+![image](https://github.com/user-attachments/assets/337c77d1-bd79-4f34-85e3-3eddfd3b1536) *Figure 4: Creating a new sending profile in GoPhish*
+
+![image](https://github.com/user-attachments/assets/9b064491-0a37-4534-90f7-eca5b5faeb0a) *Figure 5: Configuring Mailtrap SMTP credentials in GoPhish*
+
+![image](https://github.com/user-attachments/assets/5df2d701-e337-4475-b486-b4cc088c21df) *Figure 6: Test email verification before campaign launch*
 
 **Limitations in This Test**:  
 - **No real email delivery**: Cannot track opens/clicks accurately.  
@@ -51,19 +60,19 @@ This project demonstrates how **GoPhish** (a phishing framework) and **Mailtrap*
    - Designed a bank-themed email template with `{{.URL}}` for tracking.  
    - Built a landing page with `action="{{.URL}}"` to capture credentials.  
 
-   ![](media/image4.png) *Sending profile setup in GoPhish*  
-
 2. **Mailtrap Integration**:  
    - Used Mailtrap’s SMTP host/port to send test emails.  
    - Verified emails arrived in Mailtrap’s inbox (no real recipients).  
 
-   ![](media/image9.png) *Email preview in Mailtrap*  
-
 ### **3.2 Execution**  
 - Launched a test campaign to 1 user (self).  
-- Monitored GoPhish dashboard for opens/clicks (partial data due to Mailtrap).  
+- Monitored GoPhish dashboard for opens/clicks (partial data due to Mailtrap).
 
-   ![](media/image14.png) *GoPhish dashboard showing sent emails*  
+![image](https://github.com/user-attachments/assets/e8aebb2f-5027-4e94-b5ec-d5f92812a1e0) *Figure 7: Mailtrap inbox showing intercepted test email*
+
+![image](https://github.com/user-attachments/assets/c29f9199-ba07-4238-a486-80c8d08e8ddf) *Figure 8: GoPhish confirmation of successful email dispatch*
+
+![image](https://github.com/user-attachments/assets/f69a57fb-322f-4574-b20a-3b2cbfa83ee6) *Figure 9: Mailtrap email preview with headers and content*
 
 ### **3.3 Results**  
 - **Emails Sent**: 1 (via Mailtrap).  
