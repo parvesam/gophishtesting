@@ -1,5 +1,28 @@
-# GoPhish Email Security Testing Report  
-*Simulated phishing campaign to evaluate email security awareness and system vulnerabilities.*  
+# GoPhish + MailTrap Email Security Testing 
+A secure environment for testing phishing campaigns using GoPhish (phishing framework) and Mailtrap (email sandbox).  
+**Ideal for:** Red team exercises, security training, and email filter testing.
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- [GoPhish](https://getgophish.com/) (Download latest version)
+- [Mailtrap Account](https://mailtrap.io/) (Free tier works)
+- Test domain/VMs (Optional)
+
+### 1. Configure Mailtrap in GoPhish
+
+[SMTP Settings]
+Host: sandbox.smtp.mailtrap.io
+Port: 2525 or 587 (TLS)
+Username: <your_mailtrap_api_key>
+Password: <your_mailtrap_password> 
+
+## 📐 Architecture
+
+![image](https://github.com/user-attachments/assets/df8b7806-2a12-4fd5-9a7b-037f923f47cd)
+*Figure 1: GoPhish → Mailtrap → Target → Analysis workflow*
 
 ---
 
