@@ -70,10 +70,6 @@ This project demonstrates how **GoPhish** (a phishing framework) and **Mailtrap*
 
 ![image](https://github.com/user-attachments/assets/5df2d701-e337-4475-b486-b4cc088c21df) *Figure 6: Test email verification before campaign launch*
 
-**Limitations in This Test**:  
-- **No real email delivery**: Cannot track opens/clicks accurately.  
-- **Sandboxed environment**: Blocks GoPhish tracking pixels/form submissions.  
-
 ---
 
 ## **3. Methodology**  
